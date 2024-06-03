@@ -8,7 +8,6 @@ CHAT_ID = '-4198530294'
 
 # URL страницы
 URL = "https://fragment.com/numbers?sort=price_asc&filter=sale"
-TELEGRAM_API_URL = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
 
 # Предыдущие значения для сравнения
 previous_number = None
@@ -46,7 +45,9 @@ while True:
         number, price = cheapest
         # Отправить сообщение, если номер или цена изменились
         if number != previous_number or price != previous_price:
-            message = f"самый дешевый номер {number}, стоимость {price} TON"
+            current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            message = f"[{current_time}] Самый дешевый номер: {number}, стоимость {price} TON"
+            print(message)  # Вывод в консоль
             payload = {
                 'chat_id': CHAT_ID,
                 'text': message
