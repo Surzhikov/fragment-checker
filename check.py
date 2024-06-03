@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Настройки для Telegram бота
 TELEGRAM_TOKEN = '296299444:AAET5Ln-YA6bkMzLADxCxMim4T5HPBE7yNI'
-CHAT_ID = '-4198530294'
+CHAT_ID = '-1002168286319'
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
 
 # URL страницы
