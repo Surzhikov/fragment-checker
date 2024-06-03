@@ -15,6 +15,10 @@ URL = "https://fragment.com/numbers?sort=price_asc&filter=sale"
 previous_number = None
 previous_price = None
 
+
+message = f"[{current_time}] Начало работы скрипта"
+print(message)  # Вывод в консоль
+
 def fetch_cheapest_number():
     global previous_number, previous_price
     
