@@ -16,7 +16,7 @@ previous_number = None
 previous_price = None
 
 
-message = f"[{current_time}] Начало работы скрипта"
+message = f"--- Начало работы скрипта ---"
 print(message)  # Вывод в консоль
 
 def fetch_cheapest_number():
