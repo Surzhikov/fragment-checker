@@ -1,6 +1,7 @@
 import time
 import requests
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 # Настройки для Telegram бота
 TELEGRAM_TOKEN = '296299444:AAET5Ln-YA6bkMzLADxCxMim4T5HPBE7yNI'
